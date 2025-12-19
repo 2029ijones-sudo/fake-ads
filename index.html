@@ -7,12 +7,13 @@
 </head>
 <body>
 
-<header>
+<header id="header">
   <h1>FakeAds Designer</h1>
   <p>Create fake ads like a mini Canva.</p>
 </header>
 
-<main>
+<main id="mainContent">
+  <!-- Creator Mode UI -->
   <aside id="toolPanel">
     <h2>Tools</h2>
     <!-- Dynamic controls appear here -->
@@ -26,6 +27,11 @@
     <textarea id="codeOutput" readonly placeholder="Your code will appear here..."></textarea>
   </section>
 </main>
+
+<!-- Visitor Mode Ad Container -->
+<div id="visitorAd" style="display:none;">
+  <div id="adPreview"></div>
+</div>
 
 <script type="module" src="script.js"></script>
 </body>
