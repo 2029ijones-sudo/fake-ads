@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FakeAds</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <h1>FakeAds</h1>
+  <p>Create fake ad banners safely for your website</p>
+</header>
+
+<main>
+  <section class="controls">
+    <h2>Design Your Fake Ad</h2>
+
+    <label>
+      Ad Text
+      <input type="text" id="adText" placeholder="Your fake ad text">
+    </label>
+
+    <label>
+      Button Text
+      <input type="text" id="buttonText" placeholder="Click Here">
+    </label>
+
+    <label>
+      Background Color
+      <input type="color" id="bgColor" value="#4f46e5">
+    </label>
+
+    <label>
+      Text Color
+      <input type="color" id="textColor" value="#ffffff">
+    </label>
+
+    <button id="generate">Inject Into Website</button>
+  </section>
+
+  <section class="preview">
+    <h2>Live Preview</h2>
+    <div id="adPreview"></div>
+  </section>
+
+  <section class="output">
+    <h2>Your Ad Code</h2>
+    <textarea id="codeOutput" readonly></textarea>
+    <p class="note">
+      Paste this code into your website. This is a fake ad only.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>⚠️ Fake ads only. No real payments or tracking.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
